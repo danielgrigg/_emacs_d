@@ -26,6 +26,9 @@
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
+(require 'better-defaults)
+(load "describe-thing-at-point.el")
+
 ;; shell scripts
 (setq-default sh-basic-offset 2)
 (setq-default sh-indentation 2)
@@ -50,3 +53,4 @@
 
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
+
